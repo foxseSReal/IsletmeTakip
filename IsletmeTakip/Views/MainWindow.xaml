@@ -7,11 +7,18 @@
         xmlns:local="clr-namespace:IsletmeTakip"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Background="{StaticResource MaterialDesignLightSeparatorBackground}"
+        Background="{StaticResource Grey200Brush}"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Title="MainWindow" Height="720" Width="1280">
-    <Grid>
-        
+        ResizeMode="NoResize"
+        Title="MainWindow" Width="1280" Height="720">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="TitleBar" Background="{StaticResource Grey200Brush}">
+
+        </Grid>
     </Grid>
 </Window>
