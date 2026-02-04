@@ -31,6 +31,7 @@
             <Color x:Key="Grey800">#3B3B3B</Color>
             <Color x:Key="Grey900">#242424</Color>
             <Color x:Key="Charcoal">#36454F</Color>
+            <Color x:Key="Brick">#903909</Color>
             <!-- Brushes -->
             <SolidColorBrush x:Key="Dark100YellowBrush" Color="{StaticResource Yellow}"/>
             <SolidColorBrush x:Key="YellowTertiatyBrush" Color="{StaticResource YellowTertiaty}"/>
@@ -49,6 +50,7 @@
             <SolidColorBrush x:Key="Grey800Brush" Color="{StaticResource Grey800}"/>
             <SolidColorBrush x:Key="Grey900Brush" Color="{StaticResource Grey900}"/>
             <SolidColorBrush x:Key="CharcoalBrush" Color="{StaticResource Charcoal}"/>
+            <SolidColorBrush x:Key="BrickBrush" Color="{StaticResource Brick}"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
