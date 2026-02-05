@@ -10,7 +10,7 @@
         Background="{StaticResource CharcoalBrush}"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ThreeDBorderWindow"
-        ResizeMode="CanResize"
+        ResizeMode="NoResize"
         Title="İsletme Takip" Width="1280" Height="720"
         >
 
@@ -57,7 +57,7 @@
 
         <!--Orta Grid-->
         <Grid Grid.Column="0" Grid.Row="1">
-            <Border Padding="20 0 0 0" Width="700" Height="680" CornerRadius="20" Background="{StaticResource Grey300Brush}">
+            <Border Padding="25 0 0 0" Width="860" Height="650" CornerRadius="20" Background="{StaticResource CharcoalBrush}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -70,13 +70,17 @@
                         <Button Style="{DynamicResource TemelButton}"/>
                         <Button Style="{DynamicResource TemelButton}"/>
                     </StackPanel>
-                    <StackPanel Grid.Row="1">
-
+                    <StackPanel Orientation="Horizontal" Grid.Row="1">
+                        <Button Style="{DynamicResource TemelButton2}"/>
+                        <Button Style="{DynamicResource TemelButton2}"/>
+                        <Button Style="{DynamicResource TemelButton2}"/>
                     </StackPanel>
-                    <StackPanel Grid.Row="2">
-
+                    <StackPanel Orientation="Horizontal" Grid.Row="2">
+                        <Button Style="{DynamicResource TemelButton2}"/>
+                        <Button Style="{DynamicResource TemelButton2}"/>
+                        <Button Style="{DynamicResource TemelButton2}"/>
                     </StackPanel>
-
+                    <Separator Grid.Row="1" Width="500" Margin="0 0 0 10" VerticalAlignment="Bottom" Foreground="White"/>
                 </Grid>
             </Border>
         </Grid>
