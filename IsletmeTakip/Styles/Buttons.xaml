@@ -4,7 +4,7 @@
     <Style x:Key="CloseButton" TargetType="Button">
         <Setter Property="Background" Value="Orange"/>
         <Setter Property="Width" Value="50"/>
-        <Setter Property="Height" Value="30"/>
+        <Setter Property="Height" Value="40"/>
         <Setter Property="BorderBrush" Value="Orange"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Margin" Value="0 0 0 0"/>
@@ -20,11 +20,11 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" Value="Red"/>
-                            <Setter Property="BorderBrush" Value="Red"/>
+                            <Setter Property="BorderBrush" Value="Orange"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" Value="#8B0000"/>
-                            <Setter Property="BorderBrush" Value="#8B0000"/>
+                            <Setter Property="Background" Value="Red"/>
+                            <Setter Property="BorderBrush" Value="Orange"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -34,7 +34,38 @@
     <Style x:Key="MinimizeButton" TargetType="Button">
         <Setter Property="Background" Value="Orange"/>
         <Setter Property="Width" Value="50"/>
-        <Setter Property="Height" Value="30"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="BorderBrush" Value="Orange"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Margin" Value="0 0 0 0"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="0" 
+                            CornerRadius="0 0 0 20"
+                            >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="BorderBrush" Value="white"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="BorderBrush" Value="White"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="MaximizeButton" TargetType="Button">
+        <Setter Property="Background" Value="Orange"/>
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Height" Value="40"/>
         <Setter Property="BorderBrush" Value="Orange"/>
         <Setter Property="Cursor" Value="Hand"/>
         <Setter Property="Margin" Value="0 0 0 0"/>
@@ -106,7 +137,7 @@
                                                  Storyboard.TargetProperty="Y"
                                                  To="-15" Duration="0:0:0.3">
                                         <DoubleAnimation.EasingFunction>
-                                            <QuadraticEase EasingMode="EaseOut"/>
+                                            <QuadraticEase EasingMode="EaseInOut"/>
                                         </DoubleAnimation.EasingFunction>
                                     </DoubleAnimation>
                                     <DoubleAnimation Storyboard.TargetName="buttonShadow"
