@@ -54,7 +54,7 @@
 
         <!--Orta Grid-->
         <Grid Grid.Column="0" Grid.Row="1">
-            <Border Width="800" Height="680" CornerRadius="20" Background="{StaticResource Grey300Brush}">
+            <Border Padding="20 0 0 0" Width="700" Height="680" CornerRadius="20" Background="{StaticResource Grey300Brush}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -62,8 +62,10 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <StackPanel Grid.Row="0">
-
+                    <StackPanel Orientation="Horizontal" Grid.Row="0">
+                        <Button Style="{DynamicResource TemelButton}"/>
+                        <Button Style="{DynamicResource TemelButton}"/>
+                        <Button Style="{DynamicResource TemelButton}"/>
                     </StackPanel>
                     <StackPanel Grid.Row="1">
 
