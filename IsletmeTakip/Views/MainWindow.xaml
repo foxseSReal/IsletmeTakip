@@ -7,17 +7,23 @@
         xmlns:local="clr-namespace:IsletmeTakip"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Background="{StaticResource BrickBrush}"
+        Background="{StaticResource Grey200Brush}"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None"
-        ResizeMode="NoResize"
-        Title="MainWindow" Width="1280" Height="720">
+        WindowStyle="ThreeDBorderWindow"
+        ResizeMode="CanResizeWithGrip"
+        Title="İsletme Takip" Width="1280" Height="720">
     <Grid x:Name="MainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid x:Name="TitleBar" Background="{StaticResource BrickBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Sag Grid-->
+        <Grid Grid.Column="1" Background="AliceBlue">
+
+        </Grid>
+        <!--Orta Grid-->
+        <Grid Grid.Column="0">
 
         </Grid>
     </Grid>
