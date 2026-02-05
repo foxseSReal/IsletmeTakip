@@ -16,12 +16,6 @@ using System.Windows.Threading;
 
 namespace IsletmeTakip
 {
-    /// <summary>
-    /// MainWindow.xaml etkileşim mantığı
-    /// </summary>
-
-
-
     public partial class MainWindow : Window
     {
         DispatcherTimer timer = new DispatcherTimer();
