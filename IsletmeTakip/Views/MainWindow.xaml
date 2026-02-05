@@ -7,23 +7,48 @@
         xmlns:local="clr-namespace:IsletmeTakip"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Background="{StaticResource Grey200Brush}"
+        Background="{StaticResource CharcoalBrush}"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ThreeDBorderWindow"
-        ResizeMode="CanResizeWithGrip"
-        Title="İsletme Takip" Width="1280" Height="720">
+        ResizeMode="CanResize"
+        Title="İsletme Takip" Width="1280" Height="720"
+        >
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+            CaptionHeight="0"  
+            ResizeBorderThickness="5"
+            GlassFrameThickness="0"
+            CornerRadius="10" />
+    </WindowChrome.WindowChrome>
+
     <Grid x:Name="MainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
-
-        <!--Sag Grid-->
-        <Grid Grid.Column="1" Background="AliceBlue">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Title Bar-->
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Background="{StaticResource BrickBrush}">
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="BookOpenOutline" Width="50" Height="30" Foreground="Wheat"/>
+                <TextBlock Text="İŞLETME  TAKİP" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Wheat" FontWeight="SemiBold" FontFamily="/Resources/NewFonts/Pacifico-Regular.ttf#Pacifico"/>
+            </StackPanel>
         </Grid>
         <!--Orta Grid-->
-        <Grid Grid.Column="0">
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Border Width="800" Height="680" CornerRadius="20" Background="{StaticResource Grey300Brush}">
+            </Border>
+        </Grid>
+
+        <!--Sag Grid-->
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Border Height="680" CornerRadius="20 0 0 20" Background="{StaticResource Grey300Brush}">
+
+            </Border>
 
         </Grid>
     </Grid>
