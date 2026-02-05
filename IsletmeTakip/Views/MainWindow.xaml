@@ -68,12 +68,22 @@
                     <StackPanel Orientation="Horizontal" Grid.Row="0">
                         <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSol}">
                             <StackPanel>
-                                <materialDesign:PackIcon Kind="PlusBoxMultiple" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
-                                <TextBlock FontSize="36" Text="İşlem Ekle" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
+                                <materialDesign:PackIcon Kind="PlusBoxMultipleOutline" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
+                                <TextBlock FontSize="28" Text="İşlem Ekle" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
                             </StackPanel>
                         </Button>
-                        <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonOrta}"/>
-                        <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSag}"/>
+                        <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonOrta}">
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="BookOpenVariantOutline" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
+                                <TextBlock FontSize="28" Text="Gelir Gider Listele" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSag}">
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="ClipboardTextOutline" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
+                                <TextBlock FontSize="28" Text="Kategoriler" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
+                            </StackPanel>
+                        </Button>
                     </StackPanel>
                     <StackPanel  Orientation="Horizontal" Grid.Row="1">
                         <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
@@ -103,7 +113,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock x:Name="_saat" Text="" FontSize="48" FontWeight="Thin" HorizontalAlignment="Center" Margin="100 20 0 0" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
                     </StackPanel>
-                    
+
                 </Grid>
             </Border>
         </Grid>
