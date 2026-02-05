@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:IsletmeTakip"
         mc:Ignorable="d"
         Style="{StaticResource MaterialDesignWindow}"
-        Background="{StaticResource CharcoalBrush}"
+        Background="{StaticResource MaterialDesignLightSeparatorBackground}"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ThreeDBorderWindow"
         ResizeMode="CanResize"
@@ -32,24 +32,61 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Title Bar-->
-        <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Background="{StaticResource BrickBrush}">
-            <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
-                <materialDesign:PackIcon Kind="BookOpenOutline" Width="50" Height="30" Foreground="Wheat"/>
+        <Grid x:Name="TitleBar" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Background="{StaticResource CharcoalBrush}" MouseLeftButtonDown="TitleBar_MouseDown">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                <materialDesign:PackIcon Kind="NotebookMultiple" Width="50" Height="30" Foreground="Wheat"/>
                 <TextBlock Text="İŞLETME  TAKİP" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Wheat" FontWeight="SemiBold" FontFamily="/Resources/NewFonts/Pacifico-Regular.ttf#Pacifico"/>
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="2">
+                <Button Style="{StaticResource MinimizeButton}" Click="MinimizeButton_Click">
+                    <materialDesign:PackIcon Foreground="Black" Kind="Minus" Width="25" Height="25"/>
+                </Button>
+                <Button Style="{StaticResource CloseButton}" Click="CloseButton_Click">
+                    <materialDesign:PackIcon Foreground="Black" Kind="Close" Width="25" Height="25"/>
+                </Button>
             </StackPanel>
         </Grid>
+
         <!--Orta Grid-->
         <Grid Grid.Column="0" Grid.Row="1">
             <Border Width="800" Height="680" CornerRadius="20" Background="{StaticResource Grey300Brush}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+
+                    </StackPanel>
+                    <StackPanel Grid.Row="1">
+
+                    </StackPanel>
+                    <StackPanel Grid.Row="2">
+
+                    </StackPanel>
+
+                </Grid>
             </Border>
         </Grid>
 
         <!--Sag Grid-->
         <Grid Grid.Column="1" Grid.Row="1">
             <Border Height="680" CornerRadius="20 0 0 20" Background="{StaticResource Grey300Brush}">
-
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
             </Border>
-
         </Grid>
     </Grid>
 </Window>
