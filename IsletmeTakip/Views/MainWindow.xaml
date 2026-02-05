@@ -66,21 +66,23 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Orientation="Horizontal" Grid.Row="0">
-                        <Button Style="{DynamicResource TemelButton}"/>
-                        <Button Style="{DynamicResource TemelButton}"/>
-                        <Button Style="{DynamicResource TemelButton}"/>
+                        <Button Margin="10 50 0 0" Style="{DynamicResource TemelButtonSol}">
+                            <TextBlock></TextBlock>
+                        </Button>
+                        <Button Margin="10 50 0 0" Style="{DynamicResource TemelButtonOrta}"/>
+                        <Button Margin="10 50 0 0" Style="{DynamicResource TemelButtonSag}"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Row="1">
-                        <Button Style="{DynamicResource TemelButton2}"/>
-                        <Button Style="{DynamicResource TemelButton2}"/>
-                        <Button Style="{DynamicResource TemelButton2}"/>
+                        <Button Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
+                        <Button Margin="10 -40 0 0" Style="{DynamicResource TemelButtonOrta}"/>
+                        <Button Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSag}"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Row="2">
-                        <Button Style="{DynamicResource TemelButton2}"/>
-                        <Button Style="{DynamicResource TemelButton2}"/>
-                        <Button Style="{DynamicResource TemelButton2}"/>
+                        <Button Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
+                        <Button Margin="10 -40 0 0" Style="{DynamicResource TemelButtonOrta}"/>
+                        <Button Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSag}"/>
                     </StackPanel>
-                    <Separator Grid.Row="1" Width="500" Margin="0 0 0 10" VerticalAlignment="Bottom" Foreground="White"/>
+                    <Border Grid.Row="1" Style="{StaticResource BorderLikeSeperator}"/>
                 </Grid>
             </Border>
         </Grid>
