@@ -99,6 +99,11 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="_saat" Text="" FontSize="48" FontWeight="Thin" HorizontalAlignment="Center" Margin="100 20 0 0" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
+                    </StackPanel>
+                    
                 </Grid>
             </Border>
         </Grid>
