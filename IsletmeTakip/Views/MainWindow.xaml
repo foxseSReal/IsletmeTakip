@@ -40,7 +40,7 @@
             <StackPanel Margin="0 10 0 0" Orientation="Horizontal" Grid.Row="0">
                 <materialDesign:PackIcon Kind="NotebookMultiple" Width="50" Height="30" Foreground="Wheat"/>
                 <TextBlock Text="İŞLETME  TAKİP" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="Wheat" FontWeight="SemiBold" FontFamily="/Resources/NewFonts/Pacifico-Regular.ttf#Pacifico"/>
-                
+
             </StackPanel>
             <StackPanel Margin="0 0 0 0" Orientation="Horizontal" Grid.Column="1">
                 <Button Style="{StaticResource MinimizeButton}" Click="MinimizeButton_Click">
@@ -67,7 +67,10 @@
 
                     <StackPanel Orientation="Horizontal" Grid.Row="0">
                         <Button Margin="10 50 0 0" Style="{DynamicResource TemelButtonSol}">
-                            <TextBlock></TextBlock>
+                            <StackPanel>
+                                <materialDesign:PackIcon Kind="PlusBoxMultiple" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
+                                <TextBlock FontSize="36" Text="İşlem Ekle" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
+                            </StackPanel>
                         </Button>
                         <Button Margin="10 50 0 0" Style="{DynamicResource TemelButtonOrta}"/>
                         <Button Margin="10 50 0 0" Style="{DynamicResource TemelButtonSag}"/>
