@@ -7,7 +7,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="BlueGrey" SecondaryColor="Lime" />
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime" />
                 <ResourceDictionary Source="Styles/Colors.xaml" />
                 <ResourceDictionary Source="/Styles/Buttons.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
@@ -22,18 +22,6 @@
                 <Setter Property="HorizontalAlignment" Value="Center"/>
                 <Setter Property="Background" Value="#85dcdcdc"/>
                 <Setter Property="CornerRadius" Value="10"/>
-            </Style>
-
-            <Style x:Key="MainBackground" TargetType="Window">
-                <Setter Property="Background">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
-                            <GradientStop Color="#480594" Offset="0"/>
-                            <GradientStop Color="#900594" Offset="0.7"/>
-                            <GradientStop Color="#940551" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

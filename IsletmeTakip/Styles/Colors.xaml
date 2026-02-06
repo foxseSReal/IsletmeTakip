@@ -39,4 +39,13 @@
     <SolidColorBrush x:Key="Grey900Brush" Color="{StaticResource Grey900}"/>
     <SolidColorBrush x:Key="CharcoalBrush" Color="{StaticResource Charcoal}"/>
     <SolidColorBrush x:Key="BrickBrush" Color="{StaticResource Brick}"/>
+    
+    <!--MainBackground-->
+    <LinearGradientBrush x:Key="MainBackgroundBrush" StartPoint="1,0" EndPoint="0,0">
+        <GradientStop Color="#480594" Offset="0"/>
+        <GradientStop Color="#900594" Offset="0.7"/>
+        <GradientStop Color="#940551" Offset="1"/>
+    </LinearGradientBrush>
+
+
 </ResourceDictionary>
