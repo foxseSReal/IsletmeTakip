@@ -12,7 +12,7 @@
                 <ResourceDictionary Source="/Styles/Buttons.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
             </ResourceDictionary.MergedDictionaries>
-            
+
             <!-- Custom Styles -->
             <Style x:Key="BorderLikeSeperator" TargetType="Border">
                 <Setter Property="Height" Value="5"/>
@@ -23,7 +23,31 @@
                 <Setter Property="Background" Value="Cornsilk"/>
                 <Setter Property="CornerRadius" Value="10"/>
             </Style>
+
+            <Style x:Key="MainBackground" TargetType="Window">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#410859" Offset="0"/>
+                            <GradientStop Color="#590849" Offset="0.5"/>
+                            <GradientStop Color="#590820" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
             
+            <Style x:Key="GridBackground" TargetType="Grid">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#410859" Offset="0"/>
+                            <GradientStop Color="#590849" Offset="0.5"/>
+                            <GradientStop Color="#590820" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
