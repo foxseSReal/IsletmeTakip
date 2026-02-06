@@ -15,39 +15,26 @@
 
             <!-- Custom Styles -->
             <Style x:Key="BorderLikeSeperator" TargetType="Border">
-                <Setter Property="Height" Value="5"/>
-                <Setter Property="Width" Value="500"/>
+                <Setter Property="Height" Value="3"/>
+                <Setter Property="Width" Value="700"/>
                 <Setter Property="Margin" Value="-50 0 0 10"/>
                 <Setter Property="VerticalAlignment" Value="Bottom"/>
                 <Setter Property="HorizontalAlignment" Value="Center"/>
-                <Setter Property="Background" Value="Cornsilk"/>
+                <Setter Property="Background" Value="#85dcdcdc"/>
                 <Setter Property="CornerRadius" Value="10"/>
             </Style>
 
             <Style x:Key="MainBackground" TargetType="Window">
                 <Setter Property="Background">
                     <Setter.Value>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Color="#410859" Offset="0"/>
-                            <GradientStop Color="#590849" Offset="0.5"/>
-                            <GradientStop Color="#590820" Offset="1"/>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                            <GradientStop Color="#480594" Offset="0"/>
+                            <GradientStop Color="#900594" Offset="0.7"/>
+                            <GradientStop Color="#940551" Offset="1"/>
                         </LinearGradientBrush>
                     </Setter.Value>
                 </Setter>
             </Style>
-            
-            <Style x:Key="GridBackground" TargetType="Grid">
-                <Setter Property="Background">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Color="#410859" Offset="0"/>
-                            <GradientStop Color="#590849" Offset="0.5"/>
-                            <GradientStop Color="#590820" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>

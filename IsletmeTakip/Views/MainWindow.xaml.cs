@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,12 +20,14 @@ namespace IsletmeTakip
     public partial class MainWindow : Window
     {
         DispatcherTimer timer = new DispatcherTimer();
+        private readonly CultureInfo _tr = new CultureInfo("tr-TR");
         public MainWindow()
         {
             InitializeComponent();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
             timer.Start();
+            _tarih.Text = DateTime.Now.ToString("D", _tr);
         }
         private void Timer_Tick(object sender, EventArgs e)
         {

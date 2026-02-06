@@ -66,19 +66,19 @@
                         </Grid.RowDefinitions>
 
                         <StackPanel Orientation="Horizontal" Grid.Row="0">
-                            <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSol}">
+                            <Button Background="#85dcdcdc" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSol}">
                                 <StackPanel>
                                     <materialDesign:PackIcon Kind="PlusBoxMultipleOutline" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
                                     <TextBlock FontSize="28" Text="İşlem Ekle" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
                                 </StackPanel>
                             </Button>
-                            <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonOrta}">
+                            <Button Background="#85dcdcdc" Margin="10 50 0 0" Style="{DynamicResource TemelButtonOrta}">
                                 <StackPanel>
                                     <materialDesign:PackIcon Kind="BookOpenVariantOutline" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
                                     <TextBlock FontSize="28" Text="Gelir Gider Listele" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
                                 </StackPanel>
                             </Button>
-                            <Button Background="White" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSag}">
+                            <Button Background="#85dcdcdc" Margin="10 50 0 0" Style="{DynamicResource TemelButtonSag}">
                                 <StackPanel>
                                     <materialDesign:PackIcon Kind="ClipboardTextOutline" Width="50" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" />
                                     <TextBlock FontSize="28" Text="Kategoriler" FontFamily="/Resources/NewFonts/Modak-Regular.ttf#Modak"/>
@@ -86,14 +86,14 @@
                             </Button>
                         </StackPanel>
                         <StackPanel  Orientation="Horizontal" Grid.Row="1">
-                            <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
-                            <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonOrta}"/>
-                            <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSag}"/>
+                            <Button Background="#85dcdcdc" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
+                            <Button Background="#85dcdcdc" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonOrta}"/>
+                            <Button Background="#85dcdcdc" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSag}"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Grid.Row="2">
-                            <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
-                            <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonOrta}"/>
-                            <Button Background="White" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSag}"/>
+                            <Button Background="#85dcdcdc" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSol}"/>
+                            <Button Background="#85dcdcdc" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonOrta}"/>
+                            <Button Background="#90dcdcdc" Margin="10 -40 0 0" Style="{DynamicResource TemelButtonSag}"/>
                         </StackPanel>
                         <Border Grid.Row="1" Style="{StaticResource BorderLikeSeperator}"/>
                     </Grid>
@@ -103,11 +103,13 @@
 
         <Grid Grid.Column="0" Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="200"/>
+                <RowDefinition Height="230"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Vertical">
-                <TextBlock Text="12:23" x:Name="_saat" FontSize="56" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center" FontFamily="/Resources/NewFonts/Pacifico-Regular.ttf#Pacifico"/>
+                <TextBlock x:Name="_saat" FontSize="100" FontWeight="SemiBold" Foreground="White" HorizontalAlignment="Center" FontFamily="/Resources/NewFonts/Pacifico-Regular.ttf#Pacifico"/>
+                <TextBlock x:Name="_tarih" FontSize="24" VerticalAlignment="Center" Foreground="White" HorizontalAlignment="Center" FontFamily="/Resources/NewFonts/Pacifico-Regular.ttf#Pacifico"/>
+                <Separator Width="300" Background="White"/>
             </StackPanel>
         </Grid>
 
