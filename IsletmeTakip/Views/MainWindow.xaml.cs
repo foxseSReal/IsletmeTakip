@@ -49,10 +49,5 @@ namespace IsletmeTakip
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
         }
-
-        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = this.WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
-        }
     }
 }
